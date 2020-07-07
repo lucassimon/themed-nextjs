@@ -1,11 +1,15 @@
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+import { ThemeProvider } from 'styled-components'
+import GlobalStyles from 'styles/global.styles'
 
-import GlobalStyles from 'styles/global'
+import { ThemeManager, useTheme } from 'contexts/ThemeContext'
 
 function App({ Component, pageProps }: AppProps) {
+  const theme = useTheme()
+  console.log(theme)
   return (
-    <>
+    <ThemeManager>
       <Head>
         <title>React Avançado - Boilerplate</title>
         <link rel="shortcut icon" href="/img/icon-512.png" />
@@ -17,8 +21,10 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <GlobalStyles />
-      <Component {...pageProps} />
-    </>
+      <ThemeProvider theme={{ mode: theme.mode }}>
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </ThemeManager>
   )
 }
 

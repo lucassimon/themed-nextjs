@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import * as themeConf from '../../styles/theme'
 
 export const Wrapper = styled.main`
-  background-color: #06092b;
+  background-color: ${themeConf.backgroundColor};
+  color: ${themeConf.textColor};
   color: #fff;
   width: 100%;
   height: 100%;
@@ -30,4 +32,14 @@ export const Description = styled.h2`
 export const Illustration = styled.img`
   margin-top: 3rem;
   width: min(30rem, 100%);
+`
+export const Button = styled.button`
+  background: ${themeConf.buttonBackgroundColor};
+  border: none;
+  border-radius: 0.3em;
+  box-shadow: none;
+  color: ${themeConf.buttonTextColor};
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.5em 1em;
 `
