@@ -6,7 +6,7 @@ export const backgroundColor: theme.ThemeSet = theme('mode', {
 })
 
 export const textColor: theme.ThemeSet = theme('mode', {
-  light: '#191919',
+  light: '#000',
   dark: '#fafafa'
 })
 

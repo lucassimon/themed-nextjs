@@ -2,8 +2,6 @@
 
 exports[`<Main /> should render the heading 1`] = `
 .c0 {
-  background-color: #06092b;
-  color: #fff;
   width: 100%;
   height: 100%;
   padding: 3rem;
@@ -44,6 +42,15 @@ exports[`<Main /> should render the heading 1`] = `
   width: min(30rem,100%);
 }
 
+.c5 {
+  border: none;
+  border-radius: 0.3em;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0.5em 1em;
+}
+
 <main
   class="c0"
 >
@@ -67,5 +74,12 @@ exports[`<Main /> should render the heading 1`] = `
     class="c4"
     src="/img/hero-illustration.svg"
   />
+  <p>
+    <button
+      class="c5"
+    >
+      Switch to Light Mode
+    </button>
+  </p>
 </main>
 `

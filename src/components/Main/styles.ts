@@ -1,10 +1,10 @@
 import styled from 'styled-components'
+
 import * as themeConf from '../../styles/theme'
 
 export const Wrapper = styled.main`
   background-color: ${themeConf.backgroundColor};
   color: ${themeConf.textColor};
-  color: #fff;
   width: 100%;
   height: 100%;
   padding: 3rem;

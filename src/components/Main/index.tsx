@@ -1,12 +1,11 @@
 import * as S from './styles'
-import { useTheme } from 'contexts/ThemeContext'
+import { useTheme } from '../../contexts/ThemeContext'
 
 const Main = ({
   title = 'React Avançado',
   description = 'TypeScript, ReactJS, NextJS e Styled Components'
 }) => {
   const theme = useTheme()
-  console.log(theme)
   return (
     <S.Wrapper>
       <S.Logo
