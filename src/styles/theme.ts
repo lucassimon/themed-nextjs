@@ -10,12 +10,12 @@ export const textColor: theme.ThemeSet = theme('mode', {
   dark: '#fafafa'
 })
 
-export const buttonBackgroundColor = theme('mode', {
+export const buttonBackgroundColor: theme.ThemeSet = theme('mode', {
   light: '#222',
   dark: '#eee'
 })
 
-export const buttonTextColor = theme('mode', {
+export const buttonTextColor: theme.ThemeSet = theme('mode', {
   light: '#eee',
   dark: '#222'
 })
