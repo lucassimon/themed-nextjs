@@ -5,13 +5,14 @@ const defaultMode = 'dark'
 
 export interface ThemeContext {
   mode: string
-  toggle(): void
+  changeTheme(event: React.ChangeEvent<HTMLSelectElement>): void
 }
 
 export const ManageThemeContext: React.Context<ThemeContext> = React.createContext(
   {
     mode: defaultMode,
-    toggle: () => {}
+    changeTheme: (event: React.ChangeEvent<HTMLSelectElement>) =>
+      console.log(event)
   }
 )
 

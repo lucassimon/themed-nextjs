@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-
-import * as themeConf from '../../styles/theme'
+import styled, { css } from 'styled-components'
 
 export const Wrapper = styled.main`
-  background-color: ${themeConf.backgroundColor};
-  color: ${themeConf.textColor};
+  ${({ theme }) => css`
+    background-color: ${theme.backgroundColor};
+    color: ${theme.textColor};
+  `}
   width: 100%;
   height: 100%;
   padding: 3rem;
@@ -33,12 +33,14 @@ export const Illustration = styled.img`
   margin-top: 3rem;
   width: min(30rem, 100%);
 `
-export const Button = styled.button`
-  background: ${themeConf.buttonBackgroundColor};
+export const Select = styled.select`
+  ${({ theme }) => css`
+    background: ${theme.buttonBackgroundColor};
+    color: ${theme.buttonTextColor};
+  `}
   border: none;
   border-radius: 0.3em;
   box-shadow: none;
-  color: ${themeConf.buttonTextColor};
   cursor: pointer;
   font-size: 1em;
   padding: 0.5em 1em;
