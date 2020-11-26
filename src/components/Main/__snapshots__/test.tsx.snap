@@ -75,11 +75,25 @@ exports[`<Main /> should render the heading 1`] = `
     src="/img/hero-illustration.svg"
   />
   <p>
-    <button
+    <select
       class="c5"
     >
-      Switch to Light Mode
-    </button>
+      <option
+        value="light"
+      >
+        Light
+      </option>
+      <option
+        value="dark"
+      >
+        Dark
+      </option>
+      <option
+        value="accessibility"
+      >
+        Accessibility
+      </option>
+    </select>
   </p>
 </main>
 `

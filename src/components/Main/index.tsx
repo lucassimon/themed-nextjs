@@ -5,7 +5,7 @@ const Main = ({
   title = 'React Avançado',
   description = 'TypeScript, ReactJS, NextJS e Styled Components'
 }) => {
-  const { mode, toggle } = useTheme()
+  const { mode, changeTheme } = useTheme()
   return (
     <S.Wrapper>
       <S.Logo
@@ -19,9 +19,11 @@ const Main = ({
         alt="Um desenvolvedor de frente para uma tela com código."
       />
       <p>
-        <S.Button onClick={toggle}>
-          {mode === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
-        </S.Button>
+        <S.Select onChange={changeTheme} value={mode}>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="accessibility">Accessibility</option>
+        </S.Select>
       </p>
     </S.Wrapper>
   )
