@@ -16,4 +16,4 @@ export default {
   textColor: '#fafafa',
   buttonBackgroundColor: '#eee',
   buttonTextColor: '#222'
-} as const
+}
